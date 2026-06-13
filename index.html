@@ -83,12 +83,9 @@
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-      gap: 32px;
-      align-items: center;
-      min-height: 68vh;
-      padding: 30px 0 56px;
+      max-width: 820px;
+      min-height: 52vh;
+      padding: 70px 0 64px;
     }
 
     .hero h1 {
@@ -136,123 +133,6 @@
       border: 1px solid var(--border);
       background: var(--surface);
       color: var(--text);
-    }
-
-    .phone-preview {
-      position: relative;
-      min-height: 520px;
-      display: grid;
-      place-items: center;
-    }
-
-    .phone {
-      width: min(330px, 100%);
-      border: 1px solid #222a35;
-      border-radius: 42px;
-      padding: 14px;
-      background: #111820;
-      box-shadow: 0 30px 80px rgb(23 32 42 / 22%);
-    }
-
-    .screen {
-      border-radius: 31px;
-      background: linear-gradient(180deg, #fbfbfc, #eef2f7);
-      min-height: 610px;
-      padding: 24px 18px;
-      overflow: hidden;
-    }
-
-    .screen-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 18px;
-    }
-
-    .screen-top img {
-      width: 54px;
-      height: 54px;
-      border-radius: 15px;
-    }
-
-    .screen-title {
-      font-size: 1.25rem;
-      font-weight: 900;
-    }
-
-    .balance {
-      background: linear-gradient(135deg, #143d68, #2f6fed 48%, #f37b35);
-      color: #ffffff;
-      border-radius: 24px;
-      padding: 22px;
-      margin-bottom: 16px;
-    }
-
-    .balance span,
-    .stat span {
-      display: block;
-      opacity: 0.78;
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
-    .balance strong {
-      display: block;
-      margin-top: 8px;
-      font-size: 2.1rem;
-      line-height: 1;
-    }
-
-    .stat-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .stat,
-    .movement {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-    }
-
-    .stat strong {
-      display: block;
-      margin-top: 6px;
-      font-size: 1.15rem;
-    }
-
-    .movement {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 10px;
-    }
-
-    .movement div {
-      min-width: 0;
-    }
-
-    .movement b,
-    .movement small {
-      display: block;
-    }
-
-    .movement small {
-      color: var(--muted);
-    }
-
-    .amount.negative {
-      color: #bf2f24;
-      font-weight: 900;
-    }
-
-    .amount.positive {
-      color: var(--success);
-      font-weight: 900;
     }
 
     .section {
@@ -349,15 +229,6 @@
         justify-content: flex-start;
       }
 
-      .hero {
-        grid-template-columns: 1fr;
-        min-height: auto;
-      }
-
-      .phone-preview {
-        min-height: auto;
-      }
-
       .feature-grid {
         grid-template-columns: 1fr;
       }
@@ -366,10 +237,6 @@
     @media (max-width: 520px) {
       .page {
         width: min(100% - 20px, 1080px);
-      }
-
-      .screen {
-        min-height: 540px;
       }
     }
   </style>
@@ -396,58 +263,6 @@
           <div class="actions">
             <a class="button primary" href="mailto:jeck.dev820@gmail.com?subject=Supporto%20Crena">Contatta il supporto</a>
             <a class="button secondary" href="#come-funziona">Come funziona</a>
-          </div>
-        </div>
-
-        <div class="phone-preview" aria-label="Anteprima dell'app Crena">
-          <div class="phone">
-            <div class="screen">
-              <div class="screen-top">
-                <div>
-                  <div class="screen-title">Crena</div>
-                  <small>Panoramica mensile</small>
-                </div>
-                <img src="crena-icon.png" alt="">
-              </div>
-
-              <div class="balance">
-                <span>Saldo stimato</span>
-                <strong>EUR 1.842</strong>
-              </div>
-
-              <div class="stat-grid">
-                <div class="stat">
-                  <span>Spese</span>
-                  <strong>EUR 428</strong>
-                </div>
-                <div class="stat">
-                  <span>Budget</span>
-                  <strong>72%</strong>
-                </div>
-              </div>
-
-              <div class="movement">
-                <div>
-                  <b>Spesa</b>
-                  <small>Alimentari</small>
-                </div>
-                <span class="amount negative">- EUR 34</span>
-              </div>
-              <div class="movement">
-                <div>
-                  <b>Entrata</b>
-                  <small>Stipendio</small>
-                </div>
-                <span class="amount positive">+ EUR 1.950</span>
-              </div>
-              <div class="movement">
-                <div>
-                  <b>Ricorrente</b>
-                  <small>Abbonamento</small>
-                </div>
-                <span class="amount negative">- EUR 9</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
