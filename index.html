@@ -1,322 +1,466 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crena - Supporto</title>
-  <meta name="description" content="Pagina ufficiale di supporto per Crena, app per gestire spese, budget e movimenti personali.">
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f6f7f9;
-      --surface: #ffffff;
-      --text: #17202a;
-      --muted: #5d6978;
-      --border: #dce1e8;
-      --accent: #2f6fed;
-      --accent-dark: #174cb7;
-      --success: #138a57;
-      --warm: #f37b35;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crena — App per gestire spese e budget su iPhone (gratis)</title>
+<meta name="description" content="Crena è l'app gratuita per iPhone per segnare le spese in 2 secondi, impostare un budget mensile e capire dove vanno i tuoi soldi. Senza collegare il conto. Scaricala gratis.">
+<link rel="canonical" href="https://crena.app/">
+<link rel="alternate" hreflang="it" href="https://crena.app/">
+<link rel="icon" type="image/png" href="images/icon-512.png">
+<link rel="apple-touch-icon" href="images/icon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crena">
+<meta property="og:title" content="Crena — App per gestire spese e budget su iPhone">
+<meta property="og:description" content="Segna le spese in 2 secondi, imposta un budget mensile e scopri dove vanno i tuoi soldi. Gratis, senza collegare il conto corrente.">
+<meta property="og:image" content="https://crena.app/images/icon-1024.png">
+<meta property="og:url" content="https://crena.app/">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Crena — App per gestire spese e budget su iPhone">
+<meta name="twitter:description" content="Segna le spese in 2 secondi, imposta un budget mensile e scopri dove vanno i tuoi soldi. Gratis.">
+<meta name="twitter:image" content="https://crena.app/images/icon-1024.png">
+<meta name="theme-color" content="#F79A4D">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Crena - Spese e Budget",
+  "operatingSystem": "iOS",
+  "applicationCategory": "FinanceApplication",
+  "description": "App per gestire spese, entrate e budget mensile su iPhone. Registra i movimenti in pochi secondi, organizza per categoria, gestisci abbonamenti e pagamenti ricorrenti.",
+  "image": "https://crena.app/images/icon-1024.png",
+  "url": "https://crena.app/",
+  "installUrl": "https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805",
+  "author": { "@type": "Person", "name": "Pier Giacomo Gurini" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "inLanguage": ["it", "en", "fr", "de", "es", "pt"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual è la migliore app gratuita per segnare le spese su iPhone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Crena è un'app gratuita per iPhone pensata per segnare le spese in pochi secondi: apri l'app (o il widget), scrivi la spesa, l'importo, e la categoria viene suggerita automaticamente. Include budget mensile, statistiche, calendario e gestione degli abbonamenti." }
+    },
+    {
+      "@type": "Question",
+      "name": "Come faccio a tenere traccia delle spese quotidiane?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Il metodo più efficace è registrare ogni spesa nel momento in cui la fai. Con Crena bastano due secondi: nome, importo, categoria suggerita in automatico. Con il widget puoi registrare le spese frequenti (caffè, pane, acqua) con un solo tocco senza nemmeno aprire l'app." }
+    },
+    {
+      "@type": "Question",
+      "name": "Come si imposta un budget mensile?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In Crena imposti un limite di spesa mensile e l'app calcola quanto ti resta, la media giornaliera e se sei in linea fino a fine mese. La barra di avanzamento in Home ti dice a colpo d'occhio quanto budget hai usato." }
+    },
+    {
+      "@type": "Question",
+      "name": "Crena si collega al mio conto corrente?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No, per scelta. Crena non richiede l'accesso al conto corrente né registrazione: i dati restano sul tuo iPhone. Inserisci tu le spese, così sviluppi consapevolezza su dove vanno i soldi — ed è anche il motivo per cui l'app funziona con contanti e qualsiasi banca." }
+    },
+    {
+      "@type": "Question",
+      "name": "Come funziona la regola 50/30/20?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La regola 50/30/20 divide lo stipendio netto in tre parti: 50% per le spese necessarie (affitto, bollette, spesa), 30% per i desideri (svago, cene fuori) e 20% per il risparmio. Con il budget mensile e le categorie di Crena puoi applicarla e verificarla mese per mese." }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso gestire abbonamenti e pagamenti ricorrenti?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sì. Crena registra automaticamente abbonamenti, affitto, stipendio e ogni movimento ricorrente, e ti mostra l'impatto mensile stimato: quanto entra, quanto esce e quanto pesano gli abbonamenti sul tuo mese." }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso esportare le mie spese?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sì: puoi salvare un backup completo dei tuoi dati e, con Crena Premium, esportare l'estratto conto delle tue spese, utile per archivio o per analizzarle in un foglio di calcolo." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa Crena?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Crena è gratis: registrazione spese, budget mensile, statistiche del mese, calendario e widget sono inclusi. Crena Premium (1,99€/mese o 9,99€/anno) aggiunge ricorrenti illimitati, esportazione estratto conto e statistiche avanzate." }
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .page {
-      width: min(1080px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 24px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .brand img {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      box-shadow: 0 8px 22px rgb(23 32 42 / 12%);
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 10px;
-    }
-
-    nav a,
-    .secondary-link {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 8px 12px;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      background: var(--surface);
-    }
-
-    .hero {
-      max-width: 820px;
-      min-height: 52vh;
-      padding: 70px 0 64px;
-    }
-
-    .hero h1 {
-      margin: 0;
-      font-size: clamp(2.6rem, 7vw, 5.3rem);
-      line-height: 0.96;
-      letter-spacing: 0;
-    }
-
-    .hero p {
-      margin: 22px 0 0;
-      max-width: 620px;
-      color: var(--muted);
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      border-radius: 8px;
-      padding: 12px 16px;
-      text-decoration: none;
-      font-weight: 800;
-    }
-
-    .button.primary {
-      background: var(--accent);
-      color: #ffffff;
-    }
-
-    .button.primary:hover {
-      background: var(--accent-dark);
-    }
-
-    .button.secondary {
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-    }
-
-    .section {
-      padding: 46px 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .section h2 {
-      margin: 0 0 12px;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.1;
-    }
-
-    .section > p {
-      max-width: 760px;
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.08rem;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .feature {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 20px;
-    }
-
-    .feature strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 1.05rem;
-    }
-
-    .feature p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
-
-    .support-box {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      align-items: center;
-      margin-top: 24px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 24px;
-    }
-
-    .support-box p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 32px 0 44px;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-
-    footer a {
-      color: var(--muted);
-      font-weight: 700;
-      text-decoration: none;
-      margin-right: 14px;
-    }
-
-    @media (max-width: 820px) {
-      header,
-      footer,
-      .support-box {
-        align-items: flex-start;
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        flex-direction: column;
-      }
-
-      nav {
-        justify-content: flex-start;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .page {
-        width: min(100% - 20px, 1080px);
-      }
-    }
-  </style>
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#FFF8F1; --card:#FFFFFF; --ink:#3E2200; --ink-2:#7A5230;
+  --accent:#EE7B1C; --accent-dark:#C96208; --peach:#FDE3C8; --line:#F3DFC9;
+  --grad:linear-gradient(160deg,#F9A55C 0%,#FBC08A 60%,#FFF8F1 100%);
+  --radius:22px; --shadow:0 10px 30px rgba(160,90,20,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent-dark)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,248,241,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:12px;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.15rem}
+.nav-logo img{width:36px;height:36px;border-radius:9px}
+.nav-links{margin-left:auto;display:flex;align-items:center;gap:22px}
+.nav-links a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.95rem}
+.nav-links a:hover{color:var(--accent-dark)}
+.nav-cta{background:var(--ink);color:#fff !important;padding:9px 18px;border-radius:999px;font-weight:700}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+/* HERO */
+.hero{background:var(--grad);padding:64px 0 40px;overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:860px){.hero-in{grid-template-columns:1fr;text-align:center}}
+.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.12;font-weight:900;letter-spacing:-.02em;color:#4A2500}
+.hero h1 em{font-style:normal;color:#9A4B00}
+.hero p.lead{margin:18px 0 26px;font-size:1.15rem;color:#5F3A12;max-width:34em}
+@media(max-width:860px){.hero p.lead{margin-left:auto;margin-right:auto}}
+.hero-badges{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+@media(max-width:860px){.hero-badges{justify-content:center}}
+.hero-note{font-size:.9rem;color:#6B4315;margin-top:12px}
+.hero-shot{width:min(320px,80%);margin:0 auto;border-radius:32px;box-shadow:0 24px 60px rgba(120,60,0,.28)}
+.store-badge{display:inline-flex;align-items:center;gap:11px;background:#000;color:#fff;text-decoration:none;padding:12px 22px;border-radius:14px;transition:transform .15s ease}
+.store-badge:hover{transform:scale(1.04)}
+.store-badge svg{width:26px;height:31px;flex:none}
+.store-badge .sb-t{line-height:1.15;text-align:left}
+.store-badge .sb-t small{display:block;font-size:.68rem;font-weight:500;opacity:.85}
+.store-badge .sb-t span{font-size:1.25rem;font-weight:700;letter-spacing:-.01em}
+/* STRIP */
+.strip{border-bottom:1px solid var(--line);background:#FFF3E6}
+.strip-in{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 0;font-weight:700;color:#7A4A10;font-size:.95rem}
+.strip-in span{display:flex;align-items:center;gap:8px}
+/* SECTIONS */
+section{padding:72px 0}
+.kicker{display:inline-block;background:var(--peach);color:#9A4B00;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+h2{font-size:clamp(1.6rem,3vw,2.3rem);font-weight:900;letter-spacing:-.02em;line-height:1.15;color:#4A2500}
+.sec-head{max-width:640px;margin-bottom:40px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head p{margin-top:12px;color:var(--ink-2);font-size:1.05rem}
+/* SCREENSHOTS */
+.shots{display:grid;grid-auto-flow:column;grid-auto-columns:min(240px,62vw);gap:18px;overflow-x:auto;padding:8px 4px 22px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.shots figure{scroll-snap-align:start}
+.shots img{border-radius:24px;box-shadow:var(--shadow)}
+.shots figcaption{margin-top:10px;font-size:.9rem;font-weight:600;color:var(--ink-2);text-align:center}
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.step .n{width:38px;height:38px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-weight:900;color:#7A3B00;margin-bottom:16px;font-size:1.1rem}
+.step h3{font-size:1.15rem;margin-bottom:8px;color:#4A2500}
+.step p{color:var(--ink-2);font-size:.97rem}
+/* FEATURES */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.feats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.feats{grid-template-columns:1fr}}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.feat .ico{font-size:1.5rem;margin-bottom:10px}
+.feat h3{font-size:1.02rem;margin-bottom:6px;color:#4A2500}
+.feat p{color:var(--ink-2);font-size:.92rem}
+/* GUIDES */
+.guides{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.guides{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.guides{grid-template-columns:1fr}}
+.gcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;text-decoration:none;display:flex;flex-direction:column;gap:8px;transition:transform .15s ease,box-shadow .15s ease}
+.gcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.gcard .tag{font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#B05E08}
+.gcard h3{color:#4A2500;font-size:1.08rem;line-height:1.3}
+.gcard p{color:var(--ink-2);font-size:.92rem;flex:1}
+.gcard .more{color:var(--accent-dark);font-weight:700;font-size:.92rem}
+/* FAQ */
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:4px 22px;margin-bottom:12px}
+.faq summary{cursor:pointer;font-weight:700;font-size:1.03rem;padding:16px 0;color:#4A2500;list-style:none;position:relative;padding-right:34px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:400;color:var(--accent)}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 18px;color:var(--ink-2)}
+.faq .a a{font-weight:700}
+/* CTA */
+.cta{background:var(--grad);border-radius:32px;padding:56px 32px;text-align:center;box-shadow:var(--shadow)}
+.cta h2{color:#4A2500}
+.cta p{margin:14px auto 26px;max-width:36em;color:#5F3A12;font-size:1.08rem}
+.cta img.icon{width:88px;height:88px;border-radius:20px;margin:0 auto 20px;box-shadow:0 12px 28px rgba(120,60,0,.25)}
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:48px 0 40px;background:#FFF3E6}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+@media(max-width:720px){.foot{grid-template-columns:1fr}}
+.foot h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.07em;color:#9A4B00;margin-bottom:12px}
+.foot ul{list-style:none}
+.foot li{margin-bottom:8px}
+.foot a{color:var(--ink-2);text-decoration:none;font-size:.95rem}
+.foot a:hover{color:var(--accent-dark)}
+.foot .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;margin-bottom:10px}
+.foot .brand img{width:34px;height:34px;border-radius:8px}
+.foot .desc{color:var(--ink-2);font-size:.92rem;max-width:30em}
+.copy{margin-top:36px;font-size:.85rem;color:#A0774A;text-align:center}
+</style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <a class="brand" href="index.html" aria-label="Crena home">
-        <img src="crena-icon.png" alt="Crena app icon">
-        <span>Crena</span>
-      </a>
-      <nav aria-label="Link principali">
-        <a href="#supporto">Supporto</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Termini</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div>
-          <h1 id="hero-title">Crena</h1>
-          <p>Un'app semplice per tenere sotto controllo spese, entrate, budget, ricorrenze e movimenti quotidiani direttamente dal tuo dispositivo.</p>
-          <div class="actions">
-            <a class="button primary" href="mailto:jeck.dev820@gmail.com?subject=Supporto%20Crena">Contatta il supporto</a>
-            <a class="button secondary" href="#come-funziona">Come funziona</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="come-funziona">
-        <h2>Come funziona</h2>
-        <p>Crena aiuta a registrare e leggere meglio i movimenti personali, con un'esperienza pensata per essere rapida, ordinata e privata.</p>
-
-        <div class="feature-grid">
-          <article class="feature">
-            <strong>Registra movimenti</strong>
-            <p>Aggiungi entrate e uscite, scegli categorie e mantieni una cronologia chiara delle tue finanze.</p>
-          </article>
-          <article class="feature">
-            <strong>Controlla budget e statistiche</strong>
-            <p>Consulta riepiloghi, andamento delle spese e informazioni utili per capire dove finiscono i tuoi soldi.</p>
-          </article>
-          <article class="feature">
-            <strong>Gestisci ricorrenze</strong>
-            <p>Tieni d'occhio pagamenti ricorrenti, abbonamenti e promemoria legati alle tue spese.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Privacy prima di tutto</h2>
-        <p>I dati principali dell'app restano salvati sul dispositivo. Crena usa RevenueCat solo per gestire abbonamenti, acquisti in-app e accesso alle funzionalita' premium.</p>
-        <div class="actions">
-          <a class="button secondary" href="privacy.html">Leggi la Privacy Policy</a>
-          <a class="button secondary" href="terms.html">Leggi i Termini</a>
-        </div>
-      </section>
-
-      <section class="section" id="supporto">
-        <h2>Supporto</h2>
-        <p>Per domande, problemi tecnici, informazioni sugli acquisti o assistenza sull'app, puoi contattare il supporto via email.</p>
-
-        <div class="support-box">
-          <div>
-            <strong>Email supporto</strong>
-            <p>Rispondiamo appena possibile all'indirizzo indicato qui sotto.</p>
-          </div>
-          <a class="button primary" href="mailto:jeck.dev820@gmail.com?subject=Supporto%20Crena">jeck.dev820@gmail.com</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Termini di servizio</a>
-      </div>
-      <span>© 2026 Crena</span>
-    </footer>
+<nav class="nav" aria-label="Principale">
+  <div class="wrap nav-in">
+    <a class="nav-logo" href="#top"><img src="images/icon-512.png" alt="Icona di Crena, app spese e budget" width="36" height="36">Crena</a>
+    <div class="nav-links">
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#screenshot">Screenshot</a>
+      <a href="#guide">Guide</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805">Scarica gratis</a>
+    </div>
   </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <h1>L'app per gestire <em>spese e budget</em>, senza complicazioni</h1>
+      <p class="lead">Crena è l'app gratuita per iPhone che ti fa segnare una spesa in due secondi, tenere un budget mensile e capire davvero dove vanno i tuoi soldi. Niente fogli di calcolo, niente conto corrente da collegare.</p>
+      <div class="hero-badges" id="download">
+        <a class="store-badge" href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805" aria-label="Scarica Crena su App Store">
+          <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="sb-t"><small>Scarica su</small><span>App Store</span></span>
+        </a>
+      </div>
+      <p class="hero-note">Gratis · Per iPhone · I dati restano sul tuo telefono</p>
+    </div>
+    <div>
+      <img class="hero-shot" src="images/screenshot-1.png" alt="Schermata Home di Crena con saldo totale, budget mensile disponibile e pulsanti per registrare spese ed entrate" width="1242" height="2687" fetchpriority="high">
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap strip-in">
+    <span>✓ 100% gratis per iniziare</span>
+    <span>✓ Spesa registrata in 2 secondi</span>
+    <span>✓ Nessun conto da collegare</span>
+    <span>✓ Widget con spese rapide</span>
+    <span>✓ In italiano + 5 lingue</span>
+  </div>
+</div>
+
+<section id="screenshot" aria-label="Screenshot dell'app">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Screenshot</span>
+      <h2>Il controllo delle spese, a colpo d'occhio</h2>
+      <p>Tutto quello che serve per la gestione delle spese personali: budget del mese, categorie, calendario, abbonamenti e cronologia completa.</p>
+    </div>
+    <div class="shots" role="list">
+      <figure role="listitem"><img src="images/screenshot-1.png" alt="Home di Crena: saldo totale e budget mensile sotto controllo" loading="lazy" width="1242" height="2687"><figcaption>Il tuo mese, sotto controllo</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-2.png" alt="Aggiungere una spesa in Crena in due secondi con categoria suggerita" loading="lazy" width="1242" height="2687"><figcaption>Aggiungi spesa in due secondi</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-3.png" alt="Widget iPhone di Crena per registrare spese rapide con un tocco" loading="lazy" width="1242" height="2687"><figcaption>Un tocco e l'hai registrata</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-4.png" alt="Statistiche di spesa per categoria con grafici mensili in Crena" loading="lazy" width="1242" height="2687"><figcaption>Dove vanno i tuoi soldi</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-5.png" alt="Calendario delle spese giorno per giorno con budget di giugno" loading="lazy" width="1242" height="2687"><figcaption>Niente ti sfugge, giorno per giorno</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-6.png" alt="Gestione abbonamenti e pagamenti ricorrenti con impatto mensile calcolato" loading="lazy" width="1242" height="2687"><figcaption>Gestisci abbonamenti</figcaption></figure>
+      <figure role="listitem"><img src="images/screenshot-7.png" alt="Cronologia completa delle transazioni con ricerca e filtri" loading="lazy" width="1242" height="2687"><figcaption>Cronologia completa</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="come-funziona" style="background:#FFF3E6">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Come funziona</span>
+      <h2>Tre passi per tenere i conti sotto controllo</h2>
+      <p>Crena è pensata per chi ha già provato a segnare le spese su Excel o sulle note ed ha mollato dopo una settimana.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Registra ogni spesa in 2 secondi</h3>
+        <p>Nome, importo, fatto: la categoria viene suggerita in automatico. Le spese frequenti — caffè, pane, benzina — le salvi con un tocco dal widget, senza aprire l'app.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>Imposta il tuo budget mensile</h3>
+        <p>Decidi quanto vuoi spendere nel mese. Crena calcola quanto ti resta, la media giornaliera e ti avvisa se sei in linea fino a fine mese — prima che sia troppo tardi.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>Scopri dove vanno i tuoi soldi</h3>
+        <p>Statistiche per categoria, top spese del mese, andamento del saldo e calendario giorno per giorno. Gli abbonamenti e i ricorrenti sono già calcolati nell'impatto mensile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Funzionalità">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Funzioni</span>
+      <h2>Tutto per le tue finanze personali. Niente di superfluo.</h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><div class="ico">💰</div><h3>Budget mensile</h3><p>Limite di spesa, saldo disponibile, media giornaliera e proiezione fino a fine mese.</p></div>
+      <div class="feat"><div class="ico">🏷️</div><h3>Categorie automatiche</h3><p>Ogni movimento organizzato per categoria, con suggerimento automatico quando scrivi la spesa.</p></div>
+      <div class="feat"><div class="ico">📊</div><h3>Statistiche chiare</h3><p>Grafici di spesa per categoria, confronto entrate/uscite e top 3 spese del mese.</p></div>
+      <div class="feat"><div class="ico">📅</div><h3>Calendario spese</h3><p>Ogni entrata e uscita sul calendario: rivedi qualsiasi giorno e il suo netto.</p></div>
+      <div class="feat"><div class="ico">🔁</div><h3>Abbonamenti e ricorrenti</h3><p>Netflix, affitto, stipendio: registrati da soli, con l'impatto sul mese già calcolato.</p></div>
+      <div class="feat"><div class="ico">📱</div><h3>Widget spese rapide</h3><p>Le spese di ogni giorno con un solo tocco dalla schermata Home, senza aprire l'app.</p></div>
+      <div class="feat"><div class="ico">🔒</div><h3>Privacy totale</h3><p>Nessun collegamento al conto corrente, nessuna registrazione: i dati restano sul tuo iPhone.</p></div>
+      <div class="feat"><div class="ico">📤</div><h3>Backup ed export</h3><p>Salva i tuoi dati quando vuoi ed esporta l'estratto conto con Premium.</p></div>
+      <div class="feat"><div class="ico">🎨</div><h3>Tema e valuta</h3><p>Personalizza aspetto e valuta. Disponibile in italiano, inglese, francese, tedesco, spagnolo e portoghese.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide" style="background:#FFF3E6">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">Guide</span>
+      <h2>Guide pratiche per gestire i tuoi soldi</h2>
+      <p>Metodi concreti per risparmiare, fare un budget e tenere traccia delle spese — con i passaggi per applicarli subito in Crena.</p>
+    </div>
+    <div class="guides">
+      <a class="gcard" href="guides/come-tenere-traccia-delle-spese.html">
+        <span class="tag">Metodo</span>
+        <h3>Come tenere traccia delle spese quotidiane</h3>
+        <p>Il metodo che funziona davvero (e perché Excel fallisce), spiegato passo passo.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/budget-mensile.html">
+        <span class="tag">Budget</span>
+        <h3>Come fare un budget mensile che rispetti davvero</h3>
+        <p>Quanto assegnare, come monitorarlo e cosa fare quando lo sfori.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/regola-50-30-20.html">
+        <span class="tag">Metodo</span>
+        <h3>Regola 50/30/20: come funziona con esempi</h3>
+        <p>Il metodo più famoso per dividere lo stipendio, applicato ai numeri italiani.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/come-risparmiare-ogni-mese.html">
+        <span class="tag">Risparmio</span>
+        <h3>Come risparmiare soldi ogni mese</h3>
+        <p>7 mosse pratiche che non richiedono di rinunciare a tutto.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/bilancio-familiare.html">
+        <span class="tag">Famiglia</span>
+        <h3>Bilancio familiare: come farlo senza impazzire</h3>
+        <p>Entrate, uscite e spese di casa organizzate in un unico posto.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/gestire-abbonamenti.html">
+        <span class="tag">Abbonamenti</span>
+        <h3>Gestire gli abbonamenti (e tagliare quelli inutili)</h3>
+        <p>Quanto ti costano davvero Netflix, Spotify e gli altri ogni anno.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/come-gestire-lo-stipendio.html">
+        <span class="tag">Stipendio</span>
+        <h3>Come gestire lo stipendio appena arriva</h3>
+        <p>La routine di 10 minuti al mese che evita di arrivare "corti" al 25.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/app-spese-senza-conto.html">
+        <span class="tag">Privacy</span>
+        <h3>App per le spese senza collegare il conto corrente</h3>
+        <p>Perché il tracciamento manuale è più efficace (e più privato) del collegamento bancario.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+      <a class="gcard" href="guides/finanze-personali.html">
+        <span class="tag">Base</span>
+        <h3>Finanze personali: da dove iniziare</h3>
+        <p>La guida per chi parte da zero: consapevolezza, budget, risparmio.</p>
+        <span class="more">Leggi la guida →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker">FAQ</span>
+      <h2>Domande frequenti</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Qual è la migliore app gratuita per segnare le spese su iPhone?</summary>
+        <div class="a">Crena è un'app gratuita per iPhone pensata proprio per segnare le spese in pochi secondi: scrivi la spesa, l'importo, e la categoria viene suggerita in automatico. Include budget mensile, statistiche, calendario e gestione abbonamenti. <a href="guides/come-tenere-traccia-delle-spese.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Come faccio a tenere traccia delle spese quotidiane?</summary>
+        <div class="a">Il metodo che funziona è registrare la spesa nel momento in cui la fai — dopo, te ne dimentichi. Con Crena bastano due secondi, e le spese frequenti le salvi con un tocco dal widget senza aprire l'app. <a href="guides/come-tenere-traccia-delle-spese.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Come si imposta un budget mensile?</summary>
+        <div class="a">Imposti un limite di spesa per il mese e Crena calcola quanto ti resta, la media giornaliera e se sei in linea fino a fine mese, con una barra di avanzamento sempre visibile in Home. <a href="guides/budget-mensile.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Crena si collega al mio conto corrente?</summary>
+        <div class="a">No, per scelta: nessun accesso bancario, nessuna registrazione. I dati restano sul tuo iPhone, e l'app funziona con contanti e con qualsiasi banca. <a href="guides/app-spese-senza-conto.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Come funziona la regola 50/30/20?</summary>
+        <div class="a">Dividi lo stipendio netto in 50% necessità, 30% desideri e 20% risparmio. Con il budget e le categorie di Crena la applichi e la verifichi mese per mese. <a href="guides/regola-50-30-20.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Posso gestire abbonamenti e pagamenti ricorrenti?</summary>
+        <div class="a">Sì: abbonamenti, affitto e stipendio si registrano da soli alla scadenza, e Crena ti mostra l'impatto mensile stimato di tutti i ricorrenti. <a href="guides/gestire-abbonamenti.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Posso esportare le mie spese?</summary>
+        <div class="a">Puoi salvare un backup completo dei dati quando vuoi; con Crena Premium esporti anche l'estratto conto delle spese, comodo per l'archivio o per un foglio di calcolo. <a href="guides/finanze-personali.html">Scopri di più →</a></div>
+      </details>
+      <details>
+        <summary>Quanto costa Crena?</summary>
+        <div class="a">Crena è gratis: spese, budget mensile, statistiche del mese, calendario e widget inclusi. Premium (1,99€/mese o 9,99€/anno) aggiunge ricorrenti illimitati, export dell'estratto conto e statistiche avanzate. <a href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805">Scarica gratis →</a></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Scarica Crena" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <img class="icon" src="images/icon-512.png" alt="Icona dell'app Crena" width="88" height="88" loading="lazy">
+      <h2>Inizia stasera. Domani sai già dove vanno i tuoi soldi.</h2>
+      <p>Scarica Crena gratis, imposta il budget del mese e registra la prima spesa in due secondi. Senza carta di credito, senza registrazione.</p>
+      <a class="store-badge" href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805" aria-label="Scarica Crena su App Store">
+        <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <span class="sb-t"><small>Scarica su</small><span>App Store</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand"><img src="images/icon-512.png" alt="" width="34" height="34">Crena</div>
+      <p class="desc">L'app per iPhone per gestire spese, entrate e budget mensile. Semplice, veloce, privata: i tuoi dati restano sul tuo telefono.</p>
+    </div>
+    <div>
+      <h4>Guide</h4>
+      <ul>
+        <li><a href="guides/come-tenere-traccia-delle-spese.html">Tenere traccia delle spese</a></li>
+        <li><a href="guides/budget-mensile.html">Fare un budget mensile</a></li>
+        <li><a href="guides/regola-50-30-20.html">Regola 50/30/20</a></li>
+        <li><a href="guides/come-risparmiare-ogni-mese.html">Risparmiare ogni mese</a></li>
+        <li><a href="guides/bilancio-familiare.html">Bilancio familiare</a></li>
+        <li><a href="guides/gestire-abbonamenti.html">Gestire abbonamenti</a></li>
+        <li><a href="guides/come-gestire-lo-stipendio.html">Gestire lo stipendio</a></li>
+        <li><a href="guides/app-spese-senza-conto.html">App spese senza conto</a></li>
+        <li><a href="guides/finanze-personali.html">Finanze personali</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>App</h4>
+      <ul>
+        <li><a href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805">Scarica su App Store</a></li>
+        <li><a href="mailto:jeck.dev820@gmail.com?subject=Supporto%20Crena">Supporto</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Termini di utilizzo</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copy">© 2026 Crena — Pier Giacomo Gurini. Apple e App Store sono marchi di Apple Inc.</p>
+</footer>
+
 </body>
 </html>
