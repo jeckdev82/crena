@@ -7,6 +7,11 @@
 <meta name="description" content="Crena è l'app gratuita per iPhone per segnare le spese in 2 secondi, impostare un budget mensile e capire dove vanno i tuoi soldi. Senza collegare il conto. Scaricala gratis.">
 <link rel="canonical" href="https://crena.app/">
 <link rel="alternate" hreflang="it" href="https://crena.app/">
+<link rel="alternate" hreflang="en" href="https://crena.app/en/">
+<link rel="alternate" hreflang="fr" href="https://crena.app/fr/">
+<link rel="alternate" hreflang="de" href="https://crena.app/de/">
+<link rel="alternate" hreflang="es" href="https://crena.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://crena.app/en/">
 <link rel="icon" type="image/png" href="images/icon-512.png">
 <link rel="apple-touch-icon" href="images/icon-512.png">
 <meta property="og:type" content="website">
@@ -107,7 +112,11 @@ a{color:var(--accent-dark)}
 .nav-links a{text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.95rem}
 .nav-links a:hover{color:var(--accent-dark)}
 .nav-cta{background:var(--ink);color:#fff !important;padding:9px 18px;border-radius:999px;font-weight:700}
-@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}}
+.nav-lang{display:flex;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.02em}
+.nav-lang a{text-decoration:none;color:var(--ink-2);opacity:.75}
+.nav-lang a:hover{color:var(--accent-dark);opacity:1}
+.nav-lang .on{color:var(--accent-dark);opacity:1}
+@media(max-width:720px){.nav-links a:not(.nav-cta){display:none}.nav-in{gap:8px}.nav-cta{white-space:nowrap;padding:8px 12px;font-size:.85rem}.nav-lang{gap:6px;font-size:.72rem}}
 /* HERO */
 .hero{background:var(--grad);padding:64px 0 40px;overflow:hidden}
 .hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
@@ -207,6 +216,13 @@ footer{border-top:1px solid var(--line);padding:48px 0 40px;background:#FFF3E6}
       <a href="#guide">Guide</a>
       <a href="#faq">FAQ</a>
       <a class="nav-cta" href="https://apps.apple.com/it/app/crena-spese-e-budget/id6778875805">Scarica gratis</a>
+    </div>
+    <div class="nav-lang" aria-label="Lingua">
+      <a class="on" href="index.html" hreflang="it">IT</a>
+      <a href="en/index.html" hreflang="en">EN</a>
+      <a href="fr/index.html" hreflang="fr">FR</a>
+      <a href="de/index.html" hreflang="de">DE</a>
+      <a href="es/index.html" hreflang="es">ES</a>
     </div>
   </div>
 </nav>
