@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://crena.app/</loc><lastmod>2026-07-10</lastmod><priority>1.0</priority></url>
-  <url><loc>https://crena.app/guides/come-tenere-traccia-delle-spese.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/budget-mensile.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/regola-50-30-20.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/come-risparmiare-ogni-mese.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/bilancio-familiare.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/gestire-abbonamenti.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/come-gestire-lo-stipendio.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/app-spese-senza-conto.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
-  <url><loc>https://crena.app/guides/finanze-personali.html</loc><lastmod>2026-07-10</lastmod><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- ITALIANO -->
+  <url><loc>https://crena.app/</loc><lastmod>2026-07-18</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://crena.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://crena.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://crena.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://crena.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://crena.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://crena.app/en/"/>
+  </url>
+  <url><loc>https://crena.app/guides/come-tenere-traccia-delle-spese.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/budget-mensile.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/regola-50-30-20.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/come-risparmiare-ogni-mese.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/bilancio-familiare.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/gestire-abbonamenti.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/come-gestire-lo-stipendio.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/app-spese-senza-conto.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+  <url><loc>https://crena.app/guides/finanze-personali.html</loc><lastmod>2026-07-18</lastmod><priority>0.8</priority></url>
+
+  <!-- ENGLISH -->
+  <url><loc>https://crena.app/en/</loc><lastmod>2026-07-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://crena.app/en/guides/how-to-track-expenses.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/monthly-budget.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/50-30-20-rule.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/how-to-save-money-every-month.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/family-budget.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/manage-subscriptions.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/how-to-manage-your-salary.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/expense-tracker-without-bank-account.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/en/guides/personal-finance-basics.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+
+  <!-- FRANÇAIS -->
+  <url><loc>https://crena.app/fr/</loc><lastmod>2026-07-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://crena.app/fr/guides/comment-suivre-ses-depenses.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/budget-mensuel.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/regle-50-30-20.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/comment-economiser-chaque-mois.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/budget-familial.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/gerer-ses-abonnements.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/comment-gerer-son-salaire.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/application-depenses-sans-compte-bancaire.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/fr/guides/finances-personnelles.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+
+  <!-- DEUTSCH -->
+  <url><loc>https://crena.app/de/</loc><lastmod>2026-07-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://crena.app/de/guides/ausgaben-tracken.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/monatsbudget.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/50-30-20-regel.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/jeden-monat-geld-sparen.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/familienbudget.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/abos-verwalten.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/gehalt-einteilen.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/ausgaben-app-ohne-bankkonto.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/de/guides/private-finanzen.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+
+  <!-- ESPAÑOL -->
+  <url><loc>https://crena.app/es/</loc><lastmod>2026-07-18</lastmod><priority>0.9</priority></url>
+  <url><loc>https://crena.app/es/guides/como-llevar-el-control-de-gastos.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/presupuesto-mensual.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/regla-50-30-20.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/como-ahorrar-cada-mes.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/presupuesto-familiar.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/gestionar-suscripciones.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/como-administrar-el-sueldo.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/app-de-gastos-sin-cuenta-bancaria.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
+  <url><loc>https://crena.app/es/guides/finanzas-personales.html</loc><lastmod>2026-07-18</lastmod><priority>0.7</priority></url>
 </urlset>
